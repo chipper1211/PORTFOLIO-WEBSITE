@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #191d2b;
+        }
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            background: #333;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+            color: #fff;
+        }
+        #sidebar a {
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            color: #fff;
+            transition: 0.3s;
+        }
+        #sidebar a:hover {
+            background-color: #555;
+        }
+        #content {
+            margin-left: 250px;
+            padding: 15px;
+            font-family: 'Source Code Pro', monospace;
+            color: #ffffff;
+        }
+        .fa{
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 10px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-instagram {
+            background: #cb0d9c;
+            color: white;
+        }
+        .skillcontainer{
+            padding: 12px;
+        }
+        .skill{
+            margin: 0 20px;
+            width: 265px;
+            height: 6px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .skillitem{
+            display: flex;
+            align-items: center;
+            font-family: 'Source Code Pro', monospace;
+            font-weight: bold;
+        }
+        .hundred{
+            width: 265px;
+            background-color: blueviolet;
+            margin-left: 82px;
+        }
+        .hundredcpp{
+            width: 265px;
+            background-color: blueviolet;
+            margin-left: 92px;
+        }
+        .fifty{
+            width: 125px;
+            background-color: aqua;
+            margin-left: 92px;
+        }
+        .fiftypyt{
+            width: 125px;
+            background-color: aqua;
+            margin-left: 65px;
+        }
+        .twentyfive{
+            width: 75px;
+            background-color: yellow;
+            margin-left: 30px;
+        }
+        #content h3{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            #sidebar a {
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+                display: table;
+            }
+
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    <div id="content">
+        <h1>About Me</h1>
+        <p>I am a final year Under-Graduate student pursuing Computer Science and Engineering from Kalinga Institute of Industrial Technology, Bhubaneswar. I have an interest for Data Science and Analytics along with hands on experience on various projects across Data Science, Machine Learning and Front End Web Development. <br><br>
+        I have completed various certifications related to Data Analytics, SQL, Machine Learning and Problem Solving from various platforms such as Hackerrank, FreeCodeCamp, etc. I frequently solve problems related to Data Structures and Algorithms across various platforms such as Leetcode, Codechef, CodeForces, Hackerrank, etc. <br><br>
+        I am an upcoming Product Development Engineer at Comviva Technologies and aspire to use my skillset for the growth of my organization</p><br>
+        <h3>My Skillset</h3>
+        <div class="skillcontainer">
+            <div class="skillitem">HTML<div class="skill hundred"></div></div>
+            <div class="skillitem">C++<div class="skill hundredcpp"></div></div>
+            <div class="skillitem">Python<div class="skill fiftypyt"></div></div>
+            <div class="skillitem">SQL<div class="skill fifty"></div></div>
+            <div class="skillitem">CSS<div class="skill fifty"></div></div>
+            <div class="skillitem">JavaScript<div class="skill twentyfive"></div></div>
+        </div>
+        <h3>My Social Links</h3>
+        <div class="sociallinks">
+            <a href="https://www.linkedin.com/in/aryan-singh-49b12a1b7/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/aryan.sin_12/"target="_blank" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/ary_singh12" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.facebook.com/profile.php?id=100041153826142&mibextid=kFxxJD" target="_blank" class="fa fa-facebook"></a>
+        </div>
+    </div>
+</body>
+</html>

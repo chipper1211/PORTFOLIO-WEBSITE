@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #191d2b;
+        }
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            background: #333;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+            color: #fff;
+        }
+        #sidebar a {
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            color: #fff;
+            transition: 0.3s;
+        }
+        #sidebar a:hover {
+            background-color: #555;
+        }
+        #content {
+            margin-left: 250px;
+            padding: 15px;
+        }
+        #content h1{
+            color: #ffffff;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            align-items: center;
+        }
+        .card{
+            width: 325px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+        }
+        .card-content{
+            padding: 16px;
+        }
+        .card-content h3{
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .card-content p{
+            color: #666;
+            font-size: 15px;
+            line-height: 1.3;
+        }
+        .card-content .btn{
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+            color: #fff;
+        }
+        @media screen and (max-width: 600px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            #sidebar a {
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+                display: table;
+            }
+
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    <div id="content">
+        <h1>My Projects</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="NLP.jpg" alt="">
+                <div class="card-content">
+                    <h3>Customer Review Sentiment Analysis</h3>
+                    <p>Built a model which can classify reviews in the form of texts of a major e-commerce company into positive , negative and neutral. The final score is calculated using a compound score of all 3 categories.</p>
+                    <a href="https://github.com/chipper1211/Amazon-Customer-Review-Sentiment-Analysis" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="TO-DO.png" alt="">
+                <div class="card-content">
+                    <h3>Full Stack TO-DO App</h3>
+                    <p>Built a full stack web application which performs CRUD Operations in the form of a TO-DO List which can help users to keep track of tasks to be done and subsequently update / delete them as and when required.</p>
+                    <a href="https://github.com/chipper1211/TO-DO-Web-App" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Fraud Trans.png" alt="">
+                <div class="card-content">
+                    <h3>Fraud Transaction Detection</h3>
+                    <p>Built a machine learning model which can detect fraud transactions of any mode
+                    from a given dataset. </p>
+                    <a href="https://github.com/chipper1211/Fraud-Transaction-Detection" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Weather App.jpg" alt="">
+                <div class="card-content">
+                    <h3>Weather Web App</h3>
+                    <p>Built a fully responsive web application that can show the weather for any
+                    location at a current time .Integrated API from OpenWeather API </p>
+                    <a href="https://github.com/chipper1211/Weather-app" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
